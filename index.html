@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Biscoito da Sorte</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>  
+
+    <main>
+
+        <div class="tela1">
+            <H1>Qual é a sua sorte<br>de hoje?</H1>
+    
+            <p>Abra o biscoito e descubra!</p>
+
+            <form>
+
+                <button onclick="sortear()" type="button" aria-label="Tire sua Sorte">
+                    <img class="biscoito" src="/imagens/fortune-cookie.jpg" width="450" height="360">
+    
+                </button>
+        
+            </form>
+
+        </div>
+
+        <div class="tela2 hide">
+            <h1>Aqui está a sua sorte de hoje:</h1>
+                <div class="teste2">
+                    <p style="font-size: 40px" class="mensagem">Se alguem está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
+                </div>
+
+            <img src="/imagens/opened-cookie.png" alt="biscoito aberto">
+
+
+            <form>
+
+                <button onclick="retornar()" type="button" aria-label="retornar">
+                    <p class="reiniciar">Abrir outro Biscoito</p>
+    
+                </button>
+        
+            </form>
+
+        </div>
+        
+
+    </main>
+    
+</body>
+<script src="main.js"></script>
+</html>
